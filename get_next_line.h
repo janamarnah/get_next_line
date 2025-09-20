@@ -19,8 +19,8 @@
 # include <unistd.h>
 # include <string.h>
 # include <stdlib.h>
-#include <stdio.h>
-#include <fcntl.h>
+// #include <stdio.h>
+// #include <fcntl.h>
 
 char	*get_next_line(int fd);
 void	*ft_memset(void *s, int c, size_t n);
