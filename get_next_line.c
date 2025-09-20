@@ -12,7 +12,7 @@
 
 #include "get_next_line.h" 
 
-char	*append_buffer(char *basin_buffer, char *read_buffer)
+static char	*append_buffer(char *basin_buffer, char *read_buffer)
 {
 	char	*temp;
 
@@ -47,7 +47,7 @@ static char	*read_from_file(char *basin_buffer, int fd)
 	return (basin_buffer);
 }
 
-char	*extract_line(char *buffer)
+static char	*extract_line(char *buffer)
 {
 	int		i;
 	int		j;
@@ -73,7 +73,7 @@ char	*extract_line(char *buffer)
 	return (line);
 }
 
-char	*obtain_remaining(char *buffer)
+static char	*obtain_remaining(char *buffer)
 {
 	int		i;
 	int		j;
